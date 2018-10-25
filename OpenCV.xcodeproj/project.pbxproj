@@ -7,35 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D380FFF2180E33C008912DF /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D380FFE2180E33C008912DF /* opencv2.framework */; };
+		3D38101D21824DA8008912DF /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38101C21824DA8008912DF /* ImageManager.swift */; };
 		3D4CF2EB2180C6E900D57144 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4CF2EA2180C6E900D57144 /* AppDelegate.swift */; };
 		3D4CF2ED2180C6E900D57144 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4CF2EC2180C6E900D57144 /* ViewController.swift */; };
 		3D4CF2F02180C6E900D57144 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4CF2EE2180C6E900D57144 /* Main.storyboard */; };
-		3D4CF2F22180C6EB00D57144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D4CF2F12180C6EB00D57144 /* Assets.xcassets */; };
 		3D4CF2F52180C6EB00D57144 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4CF2F32180C6EB00D57144 /* LaunchScreen.storyboard */; };
-		3D4CF3002180C6EB00D57144 /* OpenCVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4CF2FF2180C6EB00D57144 /* OpenCVTests.swift */; };
+		3D4CF30E2180D27400D57144 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D4CF30D2180D27400D57144 /* OpenCVWrapper.mm */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3D4CF2FC2180C6EB00D57144 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D4CF2DF2180C6E900D57144 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D4CF2E62180C6E900D57144;
-			remoteInfo = OpenCV;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		3D380FFE2180E33C008912DF /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		3D38101C21824DA8008912DF /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		3D3810232182551F008912DF /* OpenCV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCV-Bridging-Header.h"; sourceTree = "<group>"; };
 		3D4CF2E72180C6E900D57144 /* OpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4CF2EA2180C6E900D57144 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D4CF2EC2180C6E900D57144 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D4CF2EF2180C6E900D57144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3D4CF2F12180C6EB00D57144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D4CF2F42180C6EB00D57144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D4CF2F62180C6EB00D57144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D4CF2FB2180C6EB00D57144 /* OpenCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D4CF2FF2180C6EB00D57144 /* OpenCVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVTests.swift; sourceTree = "<group>"; };
-		3D4CF3012180C6EB00D57144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D4CF30C2180D27400D57144 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		3D4CF30D2180D27400D57144 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,24 +35,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D4CF2F82180C6EB00D57144 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				3D380FFF2180E33C008912DF /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D38102021825360008912DF /* OpenCVWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				3D4CF30C2180D27400D57144 /* OpenCVWrapper.h */,
+				3D4CF30D2180D27400D57144 /* OpenCVWrapper.mm */,
+			);
+			path = OpenCVWrapper;
+			sourceTree = "<group>";
+		};
 		3D4CF2DE2180C6E900D57144 = {
 			isa = PBXGroup;
 			children = (
 				3D4CF2E92180C6E900D57144 /* OpenCV */,
-				3D4CF2FE2180C6EB00D57144 /* OpenCVTests */,
 				3D4CF2E82180C6E900D57144 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				3D4CF2E72180C6E900D57144 /* OpenCV.app */,
-				3D4CF2FB2180C6EB00D57144 /* OpenCVTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,23 +70,17 @@
 		3D4CF2E92180C6E900D57144 /* OpenCV */ = {
 			isa = PBXGroup;
 			children = (
+				3D3810232182551F008912DF /* OpenCV-Bridging-Header.h */,
 				3D4CF2EA2180C6E900D57144 /* AppDelegate.swift */,
 				3D4CF2EC2180C6E900D57144 /* ViewController.swift */,
+				3D38101C21824DA8008912DF /* ImageManager.swift */,
+				3D38102021825360008912DF /* OpenCVWrapper */,
 				3D4CF2EE2180C6E900D57144 /* Main.storyboard */,
-				3D4CF2F12180C6EB00D57144 /* Assets.xcassets */,
+				3D380FFE2180E33C008912DF /* opencv2.framework */,
 				3D4CF2F32180C6EB00D57144 /* LaunchScreen.storyboard */,
 				3D4CF2F62180C6EB00D57144 /* Info.plist */,
 			);
 			path = OpenCV;
-			sourceTree = "<group>";
-		};
-		3D4CF2FE2180C6EB00D57144 /* OpenCVTests */ = {
-			isa = PBXGroup;
-			children = (
-				3D4CF2FF2180C6EB00D57144 /* OpenCVTests.swift */,
-				3D4CF3012180C6EB00D57144 /* Info.plist */,
-			);
-			path = OpenCVTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,24 +103,6 @@
 			productReference = 3D4CF2E72180C6E900D57144 /* OpenCV.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3D4CF2FA2180C6EB00D57144 /* OpenCVTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D4CF3072180C6EB00D57144 /* Build configuration list for PBXNativeTarget "OpenCVTests" */;
-			buildPhases = (
-				3D4CF2F72180C6EB00D57144 /* Sources */,
-				3D4CF2F82180C6EB00D57144 /* Frameworks */,
-				3D4CF2F92180C6EB00D57144 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3D4CF2FD2180C6EB00D57144 /* PBXTargetDependency */,
-			);
-			name = OpenCVTests;
-			productName = OpenCVTests;
-			productReference = 3D4CF2FB2180C6EB00D57144 /* OpenCVTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,10 +115,7 @@
 				TargetAttributes = {
 					3D4CF2E62180C6E900D57144 = {
 						CreatedOnToolsVersion = 9.4;
-					};
-					3D4CF2FA2180C6EB00D57144 = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = 3D4CF2E62180C6E900D57144;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -167,7 +133,6 @@
 			projectRoot = "";
 			targets = (
 				3D4CF2E62180C6E900D57144 /* OpenCV */,
-				3D4CF2FA2180C6EB00D57144 /* OpenCVTests */,
 			);
 		};
 /* End PBXProject section */
@@ -178,15 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D4CF2F52180C6EB00D57144 /* LaunchScreen.storyboard in Resources */,
-				3D4CF2F22180C6EB00D57144 /* Assets.xcassets in Resources */,
 				3D4CF2F02180C6E900D57144 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D4CF2F92180C6EB00D57144 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,26 +156,12 @@
 			files = (
 				3D4CF2ED2180C6E900D57144 /* ViewController.swift in Sources */,
 				3D4CF2EB2180C6E900D57144 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D4CF2F72180C6EB00D57144 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D4CF3002180C6EB00D57144 /* OpenCVTests.swift in Sources */,
+				3D4CF30E2180D27400D57144 /* OpenCVWrapper.mm in Sources */,
+				3D38101D21824DA8008912DF /* ImageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3D4CF2FD2180C6EB00D57144 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3D4CF2E62180C6E900D57144 /* OpenCV */;
-			targetProxy = 3D4CF2FC2180C6EB00D57144 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3D4CF2EE2180C6E900D57144 /* Main.storyboard */ = {
@@ -358,8 +301,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7QH458A3QD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenCV",
+				);
 				INFOPLIST_FILE = OpenCV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -367,6 +315,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.OpenCV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCV/OpenCV-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -376,8 +326,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7QH458A3QD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenCV",
+				);
 				INFOPLIST_FILE = OpenCV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,50 +340,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.OpenCV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCV/OpenCV-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		3D4CF3082180C6EB00D57144 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7QH458A3QD;
-				INFOPLIST_FILE = OpenCVTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.OpenCVTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCV.app/OpenCV";
-			};
-			name = Debug;
-		};
-		3D4CF3092180C6EB00D57144 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7QH458A3QD;
-				INFOPLIST_FILE = OpenCVTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dimo.hamdy.OpenCVTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCV.app/OpenCV";
 			};
 			name = Release;
 		};
@@ -449,15 +363,6 @@
 			buildConfigurations = (
 				3D4CF3052180C6EB00D57144 /* Debug */,
 				3D4CF3062180C6EB00D57144 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3D4CF3072180C6EB00D57144 /* Build configuration list for PBXNativeTarget "OpenCVTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D4CF3082180C6EB00D57144 /* Debug */,
-				3D4CF3092180C6EB00D57144 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
