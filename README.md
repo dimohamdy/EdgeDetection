@@ -12,3 +12,10 @@ Use canny method to detect edges using OpenCV
 ### Tested devices
 
 1. iPhone 8  with iOS 12
+
+
+
+
+
+
+![](https://github.com/dimohamdy/EdgeDetection/blob/master/ScreenRecording.gif)
